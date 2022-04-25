@@ -5,6 +5,7 @@ import 'package:flutter_exmple/widgets/align.dart';
 import 'package:flutter_exmple/widgets/center.dart';
 import 'package:flutter_exmple/widgets/column.dart';
 import 'package:flutter_exmple/widgets/container.dart';
+import 'package:flutter_exmple/widgets/flexible.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ExpandedExample(),
+      home: FlexibleExemple(),
     );
   }
 }

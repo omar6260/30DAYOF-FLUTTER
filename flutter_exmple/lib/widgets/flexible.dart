@@ -36,6 +36,13 @@ class FlexibleExemple extends StatelessWidget {
             ),
             flex: 4,
           ),
+          Flexible(
+            child: Container(
+              color: Colors.orange,
+              width: 80,
+              height: 80,
+            ),
+          )
         ],
       ),
     );

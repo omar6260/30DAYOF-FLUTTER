@@ -14,32 +14,30 @@ class ExpandedExample extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Column(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      color: Colors.cyan,
-                      height: 80,
-                    ),
-                    flex: 2,
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.red,
-                      height: 80,
-                    ),
-                    flex: 3,
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.green,
-                      height: 80,
-                    ),
-                    flex: 4,
-                  ),
-                ],
+              Expanded(
+                child: Container(
+                  color: Colors.cyan,
+                  height: 80,
+                ),
+                flex: 2,
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.red,
+                  height: 80,
+                ),
+                flex: 3,
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.green,
+                  height: 80,
+                ),
+                flex: 4,
               ),
             ],
           ),
