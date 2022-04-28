@@ -1,15 +1,17 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_exmple/screen/home.dart';
+import 'package:flutter_exmple/screen/onboarding.dart';
 
-class SplashScreen extends StatefulWidget {
-  SplashScreen({Key? key}) : super(key: key);
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key}) : super(key: key);
 
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return AnimatedSplashScreen(
+      splash: 'assets/hack.png',
+      nextScreen: OnboardingScreen(),
+      splashTransition: SplashTransition.slideTransition,
+    );
   }
 }
