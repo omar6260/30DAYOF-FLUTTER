@@ -19,7 +19,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       title: "Welcome to App",
       body:
           "My apps is a platform that allows you to connect with people who are in need of your help.",
-      image: Image.asset("assets/hack.png"),
+      image: Image.asset("assets/learn.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
         bodyTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -30,7 +30,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       title: "How it works",
       body:
           "My app is a platform that allows you to connect with people who are in need of your help.",
-      image: Image.asset("assets/flutter1.jpg"),
+      image: Image.asset("assets/flutter1.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
         bodyTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -41,7 +41,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       title: "How it works",
       body:
           "My app is a platform that allows you to connect with people who are in need of your help.",
-      image: Image.asset("assets/flutter2.jpg"),
+      image: Image.asset("assets/flutter2.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
         bodyTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

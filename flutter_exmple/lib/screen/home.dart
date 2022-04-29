@@ -116,36 +116,12 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16)),
                   child: Row(
                     children: [
-                      Icon(Icons.mail),
+                      Icon(Icons.phone_android),
                       SizedBox(
                         width: 12,
                       ),
                       Column(
-                        children: [Text('oumarfall502@gmail')],
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  margin: EdgeInsets.only(
-                    left: 25,
-                    right: 25,
-                  ),
-                  padding: EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16)),
-                  child: Row(
-                    children: [
-                      Icon(Icons.mail),
-                      SizedBox(
-                        width: 12,
-                      ),
-                      Column(
-                        children: [Text('oumarfall502@gmail')],
+                        children: [Text('762412838')],
                       ),
                     ],
                   ),
