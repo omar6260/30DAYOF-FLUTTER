@@ -6,6 +6,8 @@ import 'package:introduction_screen/introduction_screen.dart';
 
 import 'package:flutter/material.dart';
 
+import 'main_screen.dart';
+
 class OnboardingScreen extends StatefulWidget {
   OnboardingScreen({Key? key}) : super(key: key);
 
@@ -16,9 +18,9 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final List<PageViewModel> page = [
     PageViewModel(
-      title: "Welcome to App",
+      title: "Welcome",
       body:
-          "My apps is a platform that allows you to connect with people who are in need of your help.",
+          "My name is Oumar, Moblie flutter developer with one year experience in the field.",
       image: Image.asset("assets/learn.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
@@ -27,9 +29,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       ),
     ),
     PageViewModel(
-      title: "How it works",
+      title: "Motivation",
       body:
-          "My app is a platform that allows you to connect with people who are in need of your help.",
+          "Extremely motivated to develop my skills and and gain experience humanl.",
       image: Image.asset("assets/flutter1.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
@@ -38,9 +40,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       ),
     ),
     PageViewModel(
-      title: "How it works",
-      body:
-          "My app is a platform that allows you to connect with people who are in need of your help.",
+      title: "Projet",
+      body: "learnig by doing and make to project..",
       image: Image.asset("assets/flutter2.png"),
       decoration: const PageDecoration(
         pageColor: Colors.white,
@@ -57,7 +58,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         pages: page,
         onDone: () {
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => HomePage()));
+              context,
+              MaterialPageRoute(
+                  builder: (context) => MainScreen(
+                        title: 'main',
+                      )));
         },
         showSkipButton: true,
         skip: const Text('Skip'),

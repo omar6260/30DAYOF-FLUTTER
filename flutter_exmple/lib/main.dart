@@ -1,15 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_exmple/screen/home.dart';
 import 'package:flutter_exmple/screen/splash.dart';
-import 'package:flutter_exmple/widgets/Expanded.dart';
-import 'package:flutter_exmple/widgets/LlistView.dart';
-import 'package:flutter_exmple/widgets/Row.dart';
-import 'package:flutter_exmple/widgets/align.dart';
-import 'package:flutter_exmple/widgets/center.dart';
-import 'package:flutter_exmple/widgets/column.dart';
-import 'package:flutter_exmple/widgets/container.dart';
-import 'package:flutter_exmple/widgets/drawer.dart';
-import 'package:flutter_exmple/widgets/flexible.dart';
 
 void main() {
   runApp(const MyApp());
