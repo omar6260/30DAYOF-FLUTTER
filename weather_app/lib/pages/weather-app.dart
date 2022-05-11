@@ -27,6 +27,7 @@ class _WeatherAppState extends State<WeatherApp> {
   }
 
   String cityName = 'London';
+  String apikey = '018d8a5ff2495105a7bba3fe4bc09882';
 
   final TextEditingController _controller = TextEditingController();
 
@@ -41,7 +42,7 @@ class _WeatherAppState extends State<WeatherApp> {
     // les information du météo app
 
     final url = Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?q=$cityName&units=metric&appid={e0af9225bada1eb2770f86e3808509a6}');
+        'https://api.openweathermap.org/data/2.5/weather?q=$cityName&units=metric&appid=$apikey');
     final weather = await http.get(url);
     final response = json.decode(weather.body);
 
@@ -123,8 +124,8 @@ class _WeatherAppState extends State<WeatherApp> {
                     colors: [Colors.lightBlue, Colors.blue, Colors.blueAccent],
                   ),
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30),
+                    bottomLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25),
                   ),
                 ),
                 child: SizedBox(

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_exmple/screen/user.dart';
 import 'package:mailto/mailto.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+
+import '../models/user.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key, required this.title}) : super(key: key);
@@ -18,8 +19,10 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   _whatsapp(number) async {
-    await launch(
-        "https://wa.me/$number?text=Hi, how are you?\n Can we meet sometimes?");
+   
+    await launchUrl(
+      Uri(host:"https://wa.me/$number?text=Hi, how are you?\n Can we meet sometimes?"),
+        );
   }
 
   _mail(eMail) async {

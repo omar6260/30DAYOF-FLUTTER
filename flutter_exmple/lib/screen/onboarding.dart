@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_exmple/screen/home.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 import 'package:flutter/material.dart';
