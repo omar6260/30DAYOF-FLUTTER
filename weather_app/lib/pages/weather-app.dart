@@ -3,14 +3,14 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:simple_shadow/simple_shadow.dart';
 import 'package:http/http.dart' as http;
-import 'package:weather_app/pages/defaultweather.dart';
-import 'package:weather_app/pages/haze.dart';
-import 'package:weather_app/pages/humidity.dart';
-import 'package:weather_app/pages/rain.dart';
-import 'package:weather_app/pages/windspeed.dart';
+import 'package:weather_app/widgets/defaultweather.dart';
+import 'package:weather_app/widgets/haze.dart';
+import 'package:weather_app/widgets/humidity.dart';
+import 'package:weather_app/widgets/rain.dart';
+import 'package:weather_app/widgets/windspeed.dart';
 
-import 'clouds.dart';
-import 'mainweather.dart';
+import '../widgets/clouds.dart';
+import '../widgets/mainweather.dart';
 
 class WeatherApp extends StatefulWidget {
   WeatherApp({Key? key}) : super(key: key);
