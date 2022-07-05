@@ -1,6 +1,4 @@
 # 30DAYOF-FLUTTER
-challenge flutter
-
 
 ## first challenge 
 here are the packages used
