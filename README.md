@@ -11,7 +11,7 @@ The mailto package helps you build mailto links and provides you with an idiomat
 supports one or many to, cc, and bcc fields
 supports custom body and subject for the emails
 encodes every value for your correctly
-is blazingly fast ⚡️😜
+is blazingly fast .
 
 - url_launcher: ^6.0.17
 
