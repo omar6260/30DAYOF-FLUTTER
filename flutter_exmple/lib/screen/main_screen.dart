@@ -30,11 +30,11 @@ class _MainScreenState extends State<MainScreen> {
         to: ["$eMail"],
         subject: "mail example",
         body: "Nice app but needs some improvement.");
-    await launch("$mailtoLink");
+    await launchUrl("$mailtoLink" as Uri);
   }
 
   _github(omar6260) async {
-    await launch("https://www.github.com/$omar6260/");
+    await launchUrl("https://www.github.com/$omar6260/" as Uri);
   }
 
   @override
@@ -42,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[800],
       appBar: AppBar(
-        title: Text('My Portfolio'),
+        title: const Text('My Portfolio'),
         centerTitle: true,
         elevation: 10,
         backgroundColor: Colors.blueAccent,
@@ -50,7 +50,7 @@ class _MainScreenState extends State<MainScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           const Expanded(

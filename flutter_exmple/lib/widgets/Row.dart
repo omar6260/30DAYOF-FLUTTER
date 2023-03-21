@@ -7,7 +7,7 @@ class RowExmple extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Row Exmple'),
+        title: const Text('Row Exmple'),
         centerTitle: true,
         backgroundColor: Colors.amber,
         elevation: 10.0,
@@ -18,19 +18,19 @@ class RowExmple extends StatelessWidget {
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              padding: EdgeInsets.all(0.0),
+              padding: const EdgeInsets.all(0.0),
               color: Colors.grey,
               width: 90.0,
               height: 90.0,
             ),
             Container(
-              padding: EdgeInsets.all(0.0),
+              padding: const EdgeInsets.all(0.0),
               color: Colors.red,
               width: 90.0,
               height: 90.0,
             ),
             Container(
-              padding: EdgeInsets.all(0.0),
+              padding: const EdgeInsets.all(0.0),
               color: Colors.green,
               width: 90.0,
               height: 90.0,
